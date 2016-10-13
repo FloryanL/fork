@@ -1,0 +1,33 @@
+/*commentaires*/
+
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Lemon', 'sans serif';
+    color: green;
+    line-height: 1.20;
+}
+h2 a {
+    font-family: 'Lalezar', 'sans serif';
+    color: darkred;
+}
+.blockcred {
+    padding: 0;
+    border-radius: 1vh;
+    border: black solid 2px;
+}
+.cred {
+    padding: 1vh 0;
+    background-color: #4D2608;
+    color: #CC5F0A;
+}
+.descript {
+    padding: 1vh 0;
+    background-color: #CC5F0A;
+    color: #4D2608;
+}

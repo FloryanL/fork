@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Comptapp</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lemon:400|Lalezar:400' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container-fluid" ng-app="ComptApp">
+	<div>
+		<h1>Le payeur</h1>
+	</div>
+	<div class="col-md-12 text-center" ng-app="PostCtrl">
+		<h2><a href="#/">Les créditeurs</a></h2>
+		<div class="container" ng-controller="PostCtrl">
+			<div class="col-md-4 blockcred" ng-repeat="credit in credits">
+				<div class="cred"><p>{{credit.name}}</p></div>
+                <div class="descript"><p>{{credit.info}}</p></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

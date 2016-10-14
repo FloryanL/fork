@@ -1,4 +1,13 @@
-var angularComptaApp = angular.module('ComptApp', []);
+var angularComptApp = angular.module('ComptApp', ['ngRoute']);
+
+angularComptApp.config(function($routeProvider){
+    $routeProvider
+        .when('/home', {templateUrl: 'parties/home.html'})
+        .when('/compte', {templateUrl: 'parties/compte.html'})
+        .when('/contact', {templateUrl: 'parties/contact.html'})
+        .otherwise({redirecTo : '/'});
+});
+
 
 angularComptaApp.controller('PostCtrl', function ($scope) {
     $scope.credits = [{

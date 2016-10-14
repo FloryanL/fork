@@ -3,7 +3,8 @@ var angularComptApp = angular.module('ComptApp', ['ngRoute']);
 angularComptApp.config(function($routeProvider){
     $routeProvider
         .when('/home', {templateUrl: 'parties/home.html'})
-        .when('/compte', {templateUrl: 'parties/compte.html'})
+        .when('/compte', {templateUrl: 'parties/compte.html',
+             controller: 'PostCtrl'})
         .when('/contact', {templateUrl: 'parties/contact.html'})
         .otherwise({redirecTo : '/'});
 });
